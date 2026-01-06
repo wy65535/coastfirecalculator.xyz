@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Coast FIRE Calculator - Calculate your Coast Financial Independence Retire Early number. Find out when you can stop saving and coast to retirement with our comprehensive FIRE calculator tool.">
+    <meta name="keywords" content="coast fire calculator, FIRE calculator, financial independence calculator, early retirement calculator, coast FI calculator, retirement planning, financial freedom calculator, investment calculator, retire early calculator">
+    <meta name="author" content="CoastFireCalculator.xyz">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://coastfirecalculator.xyz/">
+    <meta property="og:title" content="Coast FIRE Calculator - Calculate Your Financial Independence">
+    <meta property="og:description" content="Free Coast FIRE Calculator to determine when you can stop saving and coast to retirement. Plan your financial independence journey today.">
+    <meta property="og:image" content="https://coastfirecalculator.xyz/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://coastfirecalculator.xyz/">
+    <meta property="twitter:title" content="Coast FIRE Calculator - Calculate Your Financial Independence">
+    <meta property="twitter:description" content="Free Coast FIRE Calculator to determine when you can stop saving and coast to retirement. Plan your financial independence journey today.">
+    <meta property="twitter:image" content="https://coastfirecalculator.xyz/og-image.jpg">
+
+    <title>Coast FIRE Calculator - Free Financial Independence Retirement Calculator</title>
+    
+    <link rel="canonical" href="https://coastfirecalculator.xyz/">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+    <link type="text/plain" rel="author" href="humans.txt">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Coast FIRE Calculator",
+        "description": "Calculate your Coast FIRE number and plan your path to financial independence and early retirement",
+        "url": "https://coastfirecalculator.xyz/",
+        "applicationCategory": "FinanceApplication",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript"
+    }
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <h1>🔥 Coast FIRE Calculator</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#calculator">Calculator</a></li>
+                    <li><a href="#what-is-coast-fire">What is Coast FIRE</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">Coast FIRE Calculator</h1>
+                <p class="hero-subtitle">Calculate When You Can Stop Saving and Coast to Financial Independence</p>
+                <p class="hero-description">Discover your Coast FIRE number and find out when you can let compound interest do the work while you enjoy life today.</p>
+                <a href="#calculator" class="cta-button">Start Calculating Now</a>
+            </div>
+        </section>
+
+        <!-- Calculator Section -->
+        <section id="calculator" class="calculator-section">
+            <div class="container">
+                <h2>Coast FIRE Calculator</h2>
+                <p class="section-intro">Enter your financial information below to calculate your Coast FIRE number and see when you can stop actively saving for retirement.</p>
+                
+                <div class="calculator-container">
+                    <div class="calculator-inputs">
+                        <div class="input-group">
+                            <label for="currency">Currency</label>
+                            <select id="currency" name="currency">
+                                <option value="USD">USD ($)</option>
+                                <option value="EUR">EUR (€)</option>
+                                <option value="GBP">GBP (£)</option>
+                                <option value="CNY">CNY (¥)</option>
+                                <option value="JPY">JPY (¥)</option>
+                                <option value="CAD">CAD ($)</option>
+                                <option value="AUD">AUD ($)</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="current-age">Current Age</label>
+                            <input type="number" id="current-age" name="current-age" value="30" min="18" max="100">
+                            <span class="input-hint">Your age today</span>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="retirement-age">Retirement Age</label>
+                            <input type="number" id="retirement-age" name="retirement-age" value="65" min="40" max="100">
+                            <span class="input-hint">When you plan to retire</span>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="current-savings">Current Savings/Investments</label>
+                            <input type="number" id="current-savings" name="current-savings" value="50000" min="0" step="1000">
+                            <span class="input-hint">Total amount saved for retirement</span>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="monthly-contribution">Current Monthly Contribution</label>
+                            <input type="number" id="monthly-contribution" name="monthly-contribution" value="1000" min="0" step="100">
+                            <span class="input-hint">How much you save each month</span>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="annual-expenses">Desired Annual Retirement Expenses</label>
+                            <input type="number" id="annual-expenses" name="annual-expenses" value="40000" min="0" step="1000">
+                            <span class="input-hint">How much you need per year in retirement</span>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="return-rate">Expected Annual Investment Return (%)</label>
+                            <input type="number" id="return-rate" name="return-rate" value="7" min="0" max="30" step="0.1">
+                            <span class="input-hint">Average annual return (e.g., 7% for stocks)</span>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="inflation-rate">Expected Inflation Rate (%)</label>
+                            <input type="number" id="inflation-rate" name="inflation-rate" value="3" min="0" max="20" step="0.1">
+                            <span class="input-hint">Average annual inflation</span>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="safe-withdrawal-rate">Safe Withdrawal Rate (%)</label>
+                            <input type="number" id="safe-withdrawal-rate" name="safe-withdrawal-rate" value="4" min="2" max="10" step="0.1">
+                            <span class="input-hint">The 4% rule is commonly used</span>
+                        </div>
+
+                        <button id="calculate-btn" class="calculate-button">Calculate Coast FIRE Number</button>
+                        <button id="reset-btn" class="reset-button">Reset</button>
+                    </div>
+
+                    <div class="calculator-results" id="results" style="display: none;">
+                        <h3>Your Coast FIRE Results</h3>
+                        
+                        <div class="result-card highlight">
+                            <div class="result-label">Coast FIRE Number</div>
+                            <div class="result-value" id="coast-fire-number">$0</div>
+                            <div class="result-description">The amount you need to stop saving and coast to retirement</div>
+                        </div>
+
+                        <div class="result-card">
+                            <div class="result-label">Traditional FIRE Number</div>
+                            <div class="result-value" id="traditional-fire-number">$0</div>
+                            <div class="result-description">Amount needed to retire today</div>
+                        </div>
+
+                        <div class="result-card">
+                            <div class="result-label">Time to Coast FIRE</div>
+                            <div class="result-value" id="time-to-coast">0 years</div>
+                            <div class="result-description">When you can stop saving</div>
+                        </div>
+
+                        <div class="result-card">
+                            <div class="result-label">Time to Traditional FIRE</div>
+                            <div class="result-value" id="time-to-fire">0 years</div>
+                            <div class="result-description">When you can fully retire early</div>
+                        </div>
+
+                        <div class="result-card">
+                            <div class="result-label">Total Savings Needed</div>
+                            <div class="result-value" id="total-contributions">$0</div>
+                            <div class="result-description">Total you'll contribute before coasting</div>
+                        </div>
+
+                        <div class="result-card">
+                            <div class="result-label">Investment Growth</div>
+                            <div class="result-value" id="investment-growth">$0</div>
+                            <div class="result-description">Growth from compound interest</div>
+                        </div>
+
+                        <div class="chart-container">
+                            <canvas id="growth-chart"></canvas>
+                        </div>
+
+                        <div class="comparison-section">
+                            <h4>Scenario Comparison</h4>
+                            <div class="comparison-table-wrapper">
+                                <table class="comparison-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Scenario</th>
+                                            <th>Years to Reach</th>
+                                            <th>Age When Reached</th>
+                                            <th>Monthly Savings</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="comparison-tbody">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="action-buttons">
+                            <button id="share-btn" class="action-button">Share Results</button>
+                            <button id="print-btn" class="action-button">Print Results</button>
+                            <button id="recalculate-btn" class="action-button">Recalculate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What is Coast FIRE Section -->
+        <section id="what-is-coast-fire" class="content-section">
+            <div class="container">
+                <h2>What is Coast FIRE?</h2>
+                <div class="content-grid">
+                    <div class="content-block">
+                        <h3>Understanding Coast FIRE</h3>
+                        <p>Coast FIRE (Coast Financial Independence, Retire Early) is a milestone on the path to financial independence where you have saved enough money that, if left to grow without additional contributions, will be sufficient to support your retirement at your target retirement age.</p>
+                        <p>Unlike traditional FIRE where you need enough money to retire immediately, Coast FIRE allows you to stop saving aggressively and "coast" to retirement age knowing your investments will grow to your target number through compound interest alone.</p>
+                    </div>
+                    <div class="content-block">
+                        <h3>Key Benefits of Coast FIRE</h3>
+                        <ul>
+                            <li><strong>Reduced Financial Pressure:</strong> Once you reach Coast FIRE, you only need to cover current living expenses with your income</li>
+                            <li><strong>Career Flexibility:</strong> Freedom to pursue lower-paying but more fulfilling work</li>
+                            <li><strong>Better Work-Life Balance:</strong> No need to maximize income or minimize expenses aggressively</li>
+                            <li><strong>Lower Stress:</strong> Peace of mind knowing your retirement is secured</li>
+                            <li><strong>More Time for Passion:</strong> Opportunity to focus on what truly matters to you</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="content-section alt-bg">
+            <div class="container">
+                <h2>How Coast FIRE Works</h2>
+                <div class="steps-container">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Calculate Your FIRE Number</h3>
+                        <p>Determine how much money you'll need in retirement using the 4% rule or your preferred safe withdrawal rate. This is typically 25x your annual expenses.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Adjust for Compound Growth</h3>
+                        <p>Work backwards from your retirement age to calculate how much you need today for your investments to grow to your FIRE number without additional contributions.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Reach Coast FIRE</h3>
+                        <p>Save aggressively until you reach your Coast FIRE number. Once reached, you can stop making retirement contributions entirely.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3>Coast to Retirement</h3>
+                        <p>Let compound interest do the work. Your investments will grow to your full FIRE number by your target retirement age without additional savings.</p>
+                    </div>
+                </div>
+
+                <div class="formula-section">
+                    <h3>Coast FIRE Formula</h3>
+                    <div class="formula-box">
+                        <p><strong>Coast FIRE Number = FIRE Number / (1 + growth rate)^years to retirement</strong></p>
+                        <p class="formula-explanation">Where:</p>
+                        <ul>
+                            <li>FIRE Number = Annual Expenses / Safe Withdrawal Rate</li>
+                            <li>Growth Rate = (Investment Return - Inflation) as a decimal</li>
+                            <li>Years to Retirement = Retirement Age - Current Age</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Types of FIRE Section -->
+        <section class="content-section">
+            <div class="container">
+                <h2>Types of FIRE: Which One is Right for You?</h2>
+                <div class="fire-types-grid">
+                    <div class="fire-type-card">
+                        <h3>Lean FIRE</h3>
+                        <p><strong>Target:</strong> Minimal lifestyle, typically under $40,000/year</p>
+                        <p>Focus on extreme frugality and minimalism. Requires less savings but demands significant lifestyle sacrifices.</p>
+                    </div>
+                    <div class="fire-type-card highlight">
+                        <h3>Coast FIRE</h3>
+                        <p><strong>Target:</strong> Stop saving, work part-time or pursue passion</p>
+                        <p>Perfect balance of financial security and life enjoyment. Reach a milestone then coast to traditional retirement age.</p>
+                    </div>
+                    <div class="fire-type-card">
+                        <h3>Barista FIRE</h3>
+                        <p><strong>Target:</strong> Part-time work covers living expenses</p>
+                        <p>Similar to Coast FIRE but includes part-time work for healthcare benefits and spending money.</p>
+                    </div>
+                    <div class="fire-type-card">
+                        <h3>Fat FIRE</h3>
+                        <p><strong>Target:</strong> Luxurious lifestyle, $100,000+/year</p>
+                        <p>Maintain or improve your current lifestyle in retirement. Requires substantial savings but no lifestyle compromise.</p>
+                    </div>
+                    <div class="fire-type-card">
+                        <h3>Traditional FIRE</h3>
+                        <p><strong>Target:</strong> Retire early with comfortable lifestyle</p>
+                        <p>Standard FIRE approach: save 25x annual expenses and retire as soon as possible, typically in 40s or 50s.</p>
+                    </div>
+                    <div class="fire-type-card">
+                        <h3>Flamingo FIRE</h3>
+                        <p><strong>Target:</strong> Save half your FIRE number, work part-time</p>
+                        <p>Save enough so investment returns cover half your expenses, work part-time for the other half indefinitely.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="content-section alt-bg">
+            <div class="container">
+                <h2>Frequently Asked Questions About Coast FIRE</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What is the difference between Coast FIRE and regular FIRE?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Traditional FIRE means you have enough money to retire immediately and live off your investments indefinitely. Coast FIRE means you have enough invested that it will grow to your FIRE number by your target retirement age without additional contributions. Coast FIRE is reached earlier and requires less initial savings, but you still work until your planned retirement age (though you don't need to save for retirement anymore).</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How much do I need for Coast FIRE?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>The amount needed for Coast FIRE depends on several factors: your current age, planned retirement age, desired retirement expenses, expected investment returns, and inflation rate. Generally, Coast FIRE requires significantly less than traditional FIRE—often 30-50% less depending on how many years until retirement. Use our calculator above to get your personalized Coast FIRE number.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What is the 4% rule and how does it relate to Coast FIRE?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>The 4% rule states that you can safely withdraw 4% of your portfolio each year in retirement without running out of money (historically based on a 30-year retirement period). To calculate your FIRE number, multiply your annual expenses by 25 (which is 1/0.04). For Coast FIRE, you calculate what your portfolio needs to be today to grow to that FIRE number by your retirement age, accounting for compound growth.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Can I still contribute to retirement after reaching Coast FIRE?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely! Reaching Coast FIRE means you don't have to contribute anymore, but you certainly can if you want to. Additional contributions will allow you to retire even earlier, have a larger retirement fund, increase your retirement spending, or provide extra security against market downturns. Many people continue contributing but at a much lower rate, giving them more flexibility in their current lifestyle.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What are good investment return assumptions for Coast FIRE calculations?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Conservative estimates use 5-7% annual returns (after inflation), which aligns with historical stock market performance. More aggressive investors might use 8-10%, while more conservative ones might use 4-5%. It's wise to calculate multiple scenarios. Remember to account for inflation separately—if you expect 7% nominal returns and 3% inflation, your real return is approximately 4%. Our calculator allows you to adjust these assumptions to match your risk tolerance.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Is Coast FIRE realistic for everyone?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Coast FIRE is more achievable than traditional FIRE for most people because it requires less savings and gives more time for compound growth. However, it still requires disciplined saving in your 20s, 30s, or 40s, and the ability to earn enough to cover living expenses (without saving) after reaching Coast FIRE. It's most realistic for people who start saving early, have moderate income, and are comfortable working until traditional retirement age rather than retiring extremely early.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What happens if the market crashes after I reach Coast FIRE?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Market volatility is a valid concern with Coast FIRE. If you stop contributing and a major downturn occurs, you may fall below your Coast FIRE number. Strategies to mitigate this include: building a buffer above your Coast FIRE number before stopping contributions (e.g., 10-20% extra), maintaining flexibility to resume contributions if needed, using conservative return assumptions in calculations, and diversifying investments properly. Many Coast FIRE adherents continue making small contributions or adjust their retirement age if needed.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How does Coast FIRE affect my career choices?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Coast FIRE provides tremendous career flexibility. Once you reach your Coast FIRE number, you only need to earn enough to cover current living expenses—you don't need to save for retirement anymore. This allows you to: take a lower-paying but more fulfilling job, work part-time, start a business with lower risk, take career breaks for travel or family, pursue creative endeavors, or negotiate better work-life balance. Many people use Coast FIRE as a stepping stone to full FIRE or as a permanent lifestyle choice.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Should I include Social Security in my Coast FIRE calculations?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>This depends on your age and risk tolerance. Younger people (under 40) might want to exclude Social Security for conservative planning, as the program may change by retirement. Older individuals closer to retirement can more confidently include projected benefits. A balanced approach is to calculate Coast FIRE without Social Security as your baseline, then view any social security benefits as a bonus that allows for higher spending or additional security. You can also calculate multiple scenarios with different social security assumptions.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How often should I recalculate my Coast FIRE number?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Review your Coast FIRE calculations annually or when major life changes occur (marriage, children, career change, home purchase, etc.). Market performance, changes in expenses, inflation rates, and time remaining until retirement all affect your Coast FIRE number. Regular check-ins ensure you stay on track and can adjust if needed. Many people track their progress quarterly but only make significant decisions after annual reviews. Use our calculator to run different scenarios and see how changes affect your timeline.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips Section -->
+        <section class="content-section">
+            <div class="container">
+                <h2>Tips for Reaching Coast FIRE Faster</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <h3>🚀 Start Early</h3>
+                        <p>The earlier you start, the more time compound interest has to work. Starting at 25 vs 35 can mean needing to save 50% less due to extra growth time.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>💰 Maximize Income</h3>
+                        <p>Focus on increasing your earning potential through skill development, side hustles, or career advancement. Higher income accelerates your savings rate dramatically.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>📉 Reduce Expenses</h3>
+                        <p>The lower your target retirement expenses, the lower your FIRE and Coast FIRE numbers. Even small reductions compound significantly over time.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>📊 Invest Wisely</h3>
+                        <p>Use low-cost index funds to maximize returns and minimize fees. Even a 1% difference in fees can cost tens of thousands over decades.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>🎯 Track Progress</h3>
+                        <p>Monitor your net worth and savings rate regularly. Seeing progress motivates continued effort and helps you stay on course.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>🔄 Stay Flexible</h3>
+                        <p>Be willing to adjust your plan based on market conditions, life changes, and evolving goals. Flexibility is key to long-term success.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>🏦 Maximize Tax Advantages</h3>
+                        <p>Use 401(k)s, IRAs, HSAs, and other tax-advantaged accounts to reduce your tax burden and accelerate wealth building.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>🎓 Keep Learning</h3>
+                        <p>Stay informed about personal finance, investing, and FIRE strategies. Knowledge helps you make better decisions and avoid costly mistakes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Common Mistakes Section -->
+        <section class="content-section alt-bg">
+            <div class="container">
+                <h2>Common Coast FIRE Mistakes to Avoid</h2>
+                <div class="mistakes-container">
+                    <div class="mistake-item">
+                        <h3>❌ Overly Optimistic Return Assumptions</h3>
+                        <p>Using 10-12% expected returns can lead to falling short. Be conservative with estimates (5-7% real returns) to account for market volatility and down years.</p>
+                    </div>
+                    <div class="mistake-item">
+                        <h3>❌ Ignoring Inflation</h3>
+                        <p>Failing to account for inflation means underestimating how much you'll actually need in the future. Always use real (inflation-adjusted) returns and expenses.</p>
+                    </div>
+                    <div class="mistake-item">
+                        <h3>❌ Not Building a Buffer</h3>
+                        <p>Stopping contributions the moment you hit your Coast FIRE number leaves no room for error. Add a 10-20% buffer for market volatility and unexpected expenses.</p>
+                    </div>
+                    <div class="mistake-item">
+                        <h3>❌ Underestimating Expenses</h3>
+                        <p>Many people underestimate retirement expenses, especially healthcare. Track your actual spending and add padding for healthcare, travel, and lifestyle inflation.</p>
+                    </div>
+                    <div class="mistake-item">
+                        <h3>❌ Neglecting Healthcare Costs</h3>
+                        <p>Healthcare can be extremely expensive, especially before Medicare eligibility at 65. Factor in insurance premiums, deductibles, and out-of-pocket costs.</p>
+                    </div>
+                    <div class="mistake-item">
+                        <h3>❌ Poor Asset Allocation</h3>
+                        <p>Being too conservative (too much cash/bonds) or too aggressive (100% stocks) can derail plans. Maintain appropriate diversification for your age and risk tolerance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section class="content-section">
+            <div class="container">
+                <h2>Additional FIRE Resources</h2>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <h3>📚 Recommended Books</h3>
+                        <ul>
+                            <li>"Your Money or Your Life" by Vicki Robin</li>
+                            <li>"The Simple Path to Wealth" by JL Collins</li>
+                            <li>"Early Retirement Extreme" by Jacob Lund Fisker</li>
+                            <li>"Playing with FIRE" by Scott Rieckens</li>
+                        </ul>
+                    </div>
+                    <div class="resource-card">
+                        <h3>🧮 Related Calculators</h3>
+                        <ul>
+                            <li>Compound Interest Calculator</li>
+                            <li>Retirement Savings Calculator</li>
+                            <li>Investment Return Calculator</li>
+                            <li>Safe Withdrawal Rate Calculator</li>
+                        </ul>
+                    </div>
+                    <div class="resource-card">
+                        <h3>💡 Key Concepts</h3>
+                        <ul>
+                            <li>The 4% Rule and Safe Withdrawal Rates</li>
+                            <li>Sequence of Returns Risk</li>
+                            <li>Tax-Efficient Withdrawal Strategies</li>
+                            <li>Asset Allocation in Retirement</li>
+                        </ul>
+                    </div>
+                    <div class="resource-card">
+                        <h3>🎯 FIRE Communities</h3>
+                        <ul>
+                            <li>r/financialindependence (Reddit)</li>
+                            <li>r/coastFIRE (Reddit)</li>
+                            <li>ChooseFI Podcast</li>
+                            <li>Mr. Money Mustache Blog</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Start Your Coast FIRE Journey?</h2>
+                <p>Use our free calculator to find your Coast FIRE number and discover when you can stop saving for retirement.</p>
+                <a href="#calculator" class="cta-button">Calculate Your Coast FIRE Number</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Coast FIRE Calculator</h3>
+                    <p>Free tools and resources to help you achieve financial independence and retire early.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#calculator">Calculator</a></li>
+                        <li><a href="#what-is-coast-fire">What is Coast FIRE</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="privacy.html#terms">Terms of Service</a></li>
+                        <li><a href="privacy.html#disclaimer">Disclaimer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <p>© 2025 CoastFireCalculator.xyz</p>
+                    <p>All rights reserved.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Disclaimer: This calculator is for educational purposes only and does not constitute financial advice. Please consult with a qualified financial advisor before making investment decisions.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
