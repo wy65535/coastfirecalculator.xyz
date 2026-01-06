@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>404 - Page Not Found | Coast FIRE Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .error-page {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        .error-content {
+            max-width: 600px;
+        }
+        .error-code {
+            font-size: 8rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+        .error-message {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+        .error-description {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+        }
+        .error-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .error-link {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        .error-link:hover {
+            background: var(--accent-color);
+            transform: translateY(-2px);
+        }
+        .error-link.secondary {
+            background: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="index.html" style="text-decoration: none; color: inherit;">
+                        <h1>🔥 Coast FIRE Calculator</h1>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html#calculator">Calculator</a></li>
+                    <li><a href="index.html#what-is-coast-fire">What is Coast FIRE</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="error-page">
+            <div class="error-content">
+                <div class="error-code">404</div>
+                <h1 class="error-message">Page Not Found</h1>
+                <p class="error-description">
+                    Oops! The page you're looking for doesn't exist. It might have been moved or deleted.
+                </p>
+                <div class="error-links">
+                    <a href="index.html" class="error-link">Go to Homepage</a>
+                    <a href="index.html#calculator" class="error-link secondary">Use Calculator</a>
+                </div>
+                
+                <div style="margin-top: 3rem;">
+                    <h2 style="margin-bottom: 1rem;">Popular Pages</h2>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin: 0.5rem 0;"><a href="index.html#calculator" style="color: var(--primary-color);">Coast FIRE Calculator</a></li>
+                        <li style="margin: 0.5rem 0;"><a href="index.html#what-is-coast-fire" style="color: var(--primary-color);">What is Coast FIRE?</a></li>
+                        <li style="margin: 0.5rem 0;"><a href="index.html#faq" style="color: var(--primary-color);">Frequently Asked Questions</a></li>
+                        <li style="margin: 0.5rem 0;"><a href="about.html" style="color: var(--primary-color);">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Coast FIRE Calculator</h3>
+                    <p>Free tools and resources to help you achieve financial independence and retire early.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html#calculator">Calculator</a></li>
+                        <li><a href="index.html#what-is-coast-fire">What is Coast FIRE</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="privacy.html#terms">Terms of Service</a></li>
+                        <li><a href="privacy.html#disclaimer">Disclaimer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <p>© 2025 CoastFireCalculator.xyz</p>
+                    <p>All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
