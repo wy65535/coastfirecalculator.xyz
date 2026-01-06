@@ -1,0 +1,39 @@
+{
+  "name": "Coast FIRE Calculator",
+  "short_name": "Coast FIRE",
+  "description": "Calculate your Coast FIRE number and plan your path to financial independence",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff6b35",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["finance", "business", "productivity"],
+  "shortcuts": [
+    {
+      "name": "Calculate Coast FIRE",
+      "short_name": "Calculate",
+      "description": "Open the Coast FIRE Calculator",
+      "url": "/#calculator",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}
