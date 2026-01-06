@@ -1,0 +1,29 @@
+/* TEAM */
+Website: Coast FIRE Calculator
+Location: Global
+Contact: contact@coastfirecalculator.xyz
+
+/* SITE */
+Last update: 2025/01/06
+Standards: HTML5, CSS3, JavaScript ES6+
+Components: Chart.js
+Software: VS Code, Git
+
+/* PURPOSE */
+To help people achieve financial independence through Coast FIRE strategy.
+Free educational tools for retirement planning and FIRE movement.
+
+/* THANKS */
+- FIRE Community
+- Financial Independence Bloggers
+- All Contributors and Users
+
+/* TECHNOLOGY */
+HTML5, CSS3, Vanilla JavaScript
+Chart.js for data visualization
+Local Storage API for data persistence
+No backend required - 100% client-side
+
+/* KEYWORDS */
+Coast FIRE, Financial Independence, Retire Early, FIRE Calculator,
+Retirement Planning, Investment Calculator, Financial Freedom
